@@ -1,0 +1,23 @@
+@import ../../../styles/settings
+
+.list
+  display: flex
+  padding: 0px 0px 6px 0px
+  margin: 0
+
+  .item
+    display: inline-grid
+    cursor: pointer
+    +r(576)
+      width: 148px
+
+    &:not(:last-child)
+      margin-right: 12px
+
+  a
+    display: inline-grid
+
+  .iconWrapper
+    width: 148px
+    height: 42px
+    position: relative

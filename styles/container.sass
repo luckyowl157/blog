@@ -1,0 +1,27 @@
+@import settings
+
+.container
+  position: relative
+  margin: 0 auto
+  +r(0, 575)
+    padding: 0 20px
+  +r(576)
+    padding: 0 15px
+
+  &.big
+    +r(1200)
+      max-width: 1200px
+
+  &.middle
+    +r(1200)
+      max-width: 1000px
+
+  &.small
+    +r(1200)
+      max-width: 800px
+
+  &.big, &.middle, &.small
+    +r(0, 991)
+      max-width: 733px
+    +r(992, 1199)
+      max-width: 1100px

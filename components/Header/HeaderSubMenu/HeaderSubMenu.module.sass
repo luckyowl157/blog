@@ -1,0 +1,178 @@
+@import ../../../styles/settings
+  
+.subMenuList
+  background: $white
+  transition: $tr
+
+  +r(0, 575)
+    top: 17px
+    display: none
+    position: relative
+
+  +r(576, 767)
+    display: none
+    position: relative
+    grid-template-columns: repeat(1,1fr)
+    width: 100%
+    left: 0
+    top: 20px
+    padding: 0
+
+  +r(768, 991)
+    display: none
+    position: absolute
+    grid-template-columns: 1fr
+    width: 770px
+    left: -33px
+    top: 40px
+    z-index: 99
+    border-bottom-right-radius: 8px
+    border-bottom-left-radius: 8px
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15)
+
+  +r(992)
+    width: 774px
+    position: absolute
+    opacity: 0
+    visibility: hidden
+    left: 115px
+    top: 61px
+    border-radius: 8px
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)
+    border: 1px solid $grey-vanished
+
+.linkList
+  display: grid
+  +r(0, 767)
+    padding: 0
+    grid-gap: 3px
+
+  +r(768, 991)
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 0px 30px
+    padding: 27px 35px 25px
+  
+  +r(992)
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 0px 31px
+    padding: 25px 33px 30px
+
+  
+
+  li
+    +r(0, 575)
+      padding: 10px 12px 15px
+      background: $silver
+      border-radius: 8px
+    +r(576, 767)
+      padding: 15px
+      border-radius: 8px
+      background: $silver
+
+    +r(768)
+      padding: 16px 11px 12px
+      transition: all .5s ease
+
+    &:hover
+      background: $silver
+      border-radius: 8px
+      transition: all .5s ease
+
+    &:active
+      padding: 17px 11px 11px
+      background: $blue-vanished
+      border-radius: 8px
+      transition: all .5s ease
+
+    .about
+      color: red
+      
+
+    a
+      display: grid    
+      grid-template-columns: 20px 1fr
+      text-decoration: none
+      +r(0, 767)
+        grid-gap: 10px
+      +r(768, 991)
+        grid-gap: 12px
+      +r(992)
+        grid-gap: 10px
+      
+
+      .subMenu_icon
+        width: 24px
+        height: 24px
+        position: relative
+
+      .subMenu_text
+        width: 100%
+        h6
+          color: $grey-deep
+          font-family: $w
+          font-weight: 500
+          +r(0, 575)
+            font-size: 14px
+            letter-spacing: -0.5px
+            margin: 5px 2px 4px
+          +r(576, 991)
+            font-size: 16px
+            letter-spacing: -0.7px
+            margin: 0 0 4px
+          +r(992)
+            font-size: 16px
+            margin: 0 0 4px
+            letter-spacing: -0.7px
+        p
+          color: $grey
+          font-size: 14px
+
+.subMenuFooter
+  display: flex
+  align-items: center
+
+  +r(0, 767)
+    padding: 13px 17px
+    border: 1px solid $grey-vanished
+    border-radius: 8px
+    margin-top: 4px
+  +r(768, 991)
+    padding: 23px 48px 25px
+    border-top: 1px solid $grey-vanished
+  +r(992)
+    padding: 22px 48px
+    border-top: 1px solid $cool-grey
+
+
+  a 
+    font-family: $w
+    color: $grey-dark
+    font-size: 16px
+    font-weight: 500
+    margin-right: 12px
+    transition: all .5s ease
+    +r(0, 575)
+      letter-spacing: -1.9px
+    +r(576)
+      letter-spacing: -0.9px
+
+  >svg
+    transition: all .5s ease
+
+  &:hover
+    transition: all .5s ease
+    a
+      color: $orange-dark
+    >svg
+      path
+        transition: all .5s ease
+        stroke: $orange-dark
+
+  &:active
+    transition: all .5s ease
+    a
+      color: $orange
+    >svg
+      path
+        transition: all .5s ease
+        stroke: $orange

@@ -1,0 +1,81 @@
+@import ../../styles/settings
+
+.footer
+  background-color: $black
+  +r(0, 575)
+    padding-bottom: 19px
+  +r(0, 991)
+    padding-top: 42px
+  +r(992)
+    padding-top: 52px
+
+  .wrapperLogoAndText
+    display: flex
+    align-items: center
+    +r(0, 575)
+      margin-bottom: 33px
+    +r(576, 991)
+      margin-bottom: 37px
+    +r(992)
+      margin-bottom: 49px
+      padding-right: 3px
+
+    p
+      color: $grey
+      border-left: 1px solid $silver
+      font-weight: 500
+      font-family: $w
+      +r(0, 575)
+        line-height: 1.2
+        font-size: 14px
+      +r(0, 991)
+        letter-spacing: -0.05em
+        padding-left: 18px
+      +r(576, 991)
+        font-size: 16px
+        line-height: 1
+      +r(992)
+        letter-spacing: -0.06em
+        padding-left: 17px
+        line-height: 0.9
+
+  .wrapperZtelcoLogo
+    position: relative
+    cursor: pointer
+    +r(0, 991)
+      height: 36px
+      min-width: 80px
+      margin-right: 18px
+    +r(992)
+      margin-right: 15px
+      height: 45px
+      width: 100px
+
+    span
+      +r(0, 991)
+        height: 36px
+        width: 80px
+
+  .wrapNavAndContacts
+    +r(576)
+      display: flex
+      justify-content: space-between
+    +r(992)
+      display: grid
+      grid-template-columns: 4fr 0.9fr
+      column-gap: 30px
+      margin-bottom: 30px
+
+  .wrapperDownlAndRating
+    +r(576)
+      display: flex
+      align-items: flex-end
+      justify-content: space-between
+      padding-bottom: 48px
+
+  .wrapFootPart
+    +r(992)
+      display: flex
+      flex-direction: row-reverse
+      align-items: baseline
+      justify-content: space-between

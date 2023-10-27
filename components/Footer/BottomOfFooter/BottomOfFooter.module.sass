@@ -1,0 +1,66 @@
+@import ../../../styles/settings
+
+.bottomOfFooter
+  border-top: 1px solid $grey-deep
+  display: flex
+  align-items: center
+  +r(0, 991)
+    padding-top: 24px
+    padding-bottom: 20px
+    flex-direction: column
+  +r(992)
+    justify-content: space-between
+    padding-top: 13px
+    padding-bottom: 22px
+
+  .wrapImageAndDescr
+    display: flex
+    align-items: center
+
+  .iconWrapper
+    position: relative
+    +r(992)
+      margin-right: 22px
+    +r(0, 991)
+      height: 32px
+      width: 76px
+    +r(992)
+      height: 40px
+      width: 96px
+
+  ul
+    padding: 0
+    display: flex
+    +r(0, 575)
+      margin-top: 24px
+    +r(576, 992)
+      margin-top: 24px
+      margin-bottom: 19px
+
+  li
+    &:not(:last-child)
+      +r(0, 575)
+        margin-right: 30px
+      +r(576)
+        margin-right: 31px
+
+  p
+    text-align: center
+    color: $grey-light
+    font-size: 14px
+    +r(0,575)
+      letter-spacing: -0.05px
+    +r(576)
+      letter-spacing: -0.05px
+    +r(0, 575)
+      margin-top: 10px
+    +r(576, 992)
+      margin-top: 8px
+    +r(992)
+      font-size: 16px
+
+  .link
+    font-family: $q
+    font-size: 16px
+    color: $white
+    letter-spacing: -0.05px

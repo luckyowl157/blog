@@ -1,0 +1,29 @@
+@import ../../../styles/settings
+
+.socialLincs
+  +r(0, 575)
+    text-align: center
+    margin-top: 30px
+    margin-bottom: 19px
+  +r(576)
+    display: flex
+    justify-content: right
+  +r(576, 991)
+    margin-top: 40px
+  +r(992)
+    margin-top: 52px
+
+  .link
+    display: inline-block
+    font-size: 0
+
+    &:not(:last-child)
+      margin-right: 16px
+
+  svg
+    &:hover
+      path
+        fill: $white
+    path
+      fill: $grey-light
+      transition: fill linear $tr

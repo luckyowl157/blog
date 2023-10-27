@@ -1,0 +1,26 @@
+[
+  {
+    "image" : {
+      "desk": "/images/components/SmallBanners/man_desk.png",
+      "mob": "/images/components/SmallBanners/man_mob.png"
+    },
+    "title": "Request a Quote",
+    "text": "Request a Quote and Get a <span>Free Month of Service</span>",
+    "button": {
+      "link": "https://pages.ztelco.com/new-request-a-quote-and-earn-a-free-month",
+      "text": "Request a Quote"
+    }
+  },
+  {
+    "image" : {
+      "desk": "/images/components/SmallBanners/computer_desk.png",
+      "mob": "/images/components/SmallBanners/computer_mob.svg"
+    },
+    "title": "Download Our Price Sheet",
+    "text": "Ready to take the next step? See our business customer pricing.",
+    "button": {
+      "link": "https://pages.ztelco.com/new-get-quote",
+      "text": "Download"
+    }
+  }
+]

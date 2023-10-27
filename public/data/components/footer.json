@@ -1,0 +1,221 @@
+{
+  "logo": {
+    "src": "/images/components/Footer/ztelco-logo.svg",
+    "title": "ztelco-logo",
+    "alt": "ztelco-logo",
+    "href": "/",
+    "text": "Faster Internet and Better Phone Systems"
+  },
+"menu":[
+  {
+    "id": "1",
+    "title": "Services",
+    "list": [{
+  "id": "1",
+  "title": "Business Internet",
+  "link": "https://ztelco.com/services/business-internet-service"
+},
+{
+  "id": "2",
+  "title": "Managed Wifi",
+  "link": "https://ztelco.com/services/managed-wifi"
+},
+{
+  "id": "3",
+  "title": "Digital Telephone",
+  "link": "https://ztelco.com/services/voip-phone-service"
+},
+{
+  "id": "4",
+  "title": "Managed Infrastructure",
+  "link": "https://ztelco.com/services/managed-infrastructure"
+},
+{
+  "id": "5",
+  "title": "Cabling Managment",
+  "link": "https://ztelco.com/services/cabling-management"
+},
+{
+  "id": "6",
+  "title": "Residental Internet",
+  "link": "https://ztelco.com/services/residential-internet"
+}]
+  },
+    {
+    "id": "2",
+    "title": "Solutions",
+    "list": [{
+  "id": "1",
+  "title": "Property Managment",
+  "link": "https://ztelco.com/business-solutions/property-management"
+},
+{
+  "id": "2",
+  "title": "Internet for Events",
+  "link": "https://ztelco.com/business-solutions/internet-for-events"
+},
+{
+  "id": "3",
+  "title": "Commercial Real Estate",
+  "link": "https://ztelco.com/business-solutions/commercial-real-estate"
+},
+{
+  "id": "4",
+  "title": "Internet for Remote Sites",
+  "link": "https://ztelco.com/business-solutions/internet-for-remote-sites"
+},
+{
+  "id": "5",
+  "title": "Network IT",
+  "link": "https://ztelco.com/business-solutions/network-it"
+},
+{
+  "id": "6",
+  "title": "Internet for Gaming",
+  "link": "https://ztelco.com/business-solutions/internet-for-professional-gaming"
+},
+{
+  "id": "7",
+  "title": "Network Integrations",
+  "link": "https://ztelco.com/business-solutions/network-integrations"
+},
+{
+  "id": "8",
+  "title": "Battary Backup Systems",
+  "link": "https://ztelco.com/business-solutions/battery-backup-systems-from-ztelco"
+}]
+  },
+    {
+    "id": "3",
+    "title": "Industry",
+    "list": [{
+  "id": "1",
+  "title": "Mecial Facilities",
+  "link": "https://ztelco.com/industries/secure-internet-and-phone-solutions-for-medical-facilities"
+},
+{
+  "id": "2",
+  "title": "Hotels",
+  "link": "https://ztelco.com/industries/reliable-internet-and-phone-services-for-hotels"
+},
+{
+  "id": "3",
+  "title": "Auto Dealerships",
+  "link": "https://ztelco.com/industries/data-plans-for-auto-dealerships-internet-and-phone"
+},
+{
+  "id": "4",
+  "title": "Construction Sites",
+  "link": "https://ztelco.com/industries/temporary-internet-and-phone-services-for-construction-sites"
+},
+{
+  "id": "5",
+  "title": "Law Firms",
+  "link": "https://ztelco.com/industries/trusted-internet-and-phone-services-for-law-firms"
+},
+{
+  "id": "6",
+  "title": "Gym and Rec Centers",
+  "link": "https://ztelco.com/industries/internet-and-phone-provider-for-gyms-and-recreation-centers"
+},
+{
+  "id": "7",
+  "title": "School and Educators",
+  "link": "https://ztelco.com/industries/optimizing-school-communications-with-better-internet-and-phone-services"
+}]
+  },
+    {
+    "id": "4",
+    "title": "About",
+    "list": [{
+  "id": "1",
+  "title": "About Us",
+  "link": "https://ztelco.com/about-us"
+},
+{
+  "id": "2",
+  "title": "Leadership",
+  "link": "https://ztelco.com/leadership"
+},
+{
+  "id": "3",
+  "title": "Careers",
+  "link": "https://ztelco.com/careers"
+},
+{
+  "id": "4",
+  "title": "Blog",
+  "link": "https://blog.ztelco.com/"
+},
+{
+  "id": "5",
+  "title": "Support",
+  "link": "https://ztelco.com/support"
+},
+{
+  "id": "6",
+  "title": "FAQ",
+  "link": "https://ztelco.com/faq"
+},
+{
+  "id": "7",
+  "title": "Contact Us",
+  "link": "https://ztelco.com/contact"
+}]
+  }
+],
+  "contacts":  {
+    "title": "Contact us",
+     "address": {
+       "name": "12585 Kirkham Ct. Poway, CA 92064",
+       "href": "https://maps.apple.com/?address=12585%20Kirkham%20Ct,%20Poway,%20CA%20%2092064,%20United%20States&auid=7055438643457259179&ll=32.943432,-117.050161&lsp=9902&q=ZTelco&_ext=CjMKBQgEEOIBCgQIBRADCgUIBhCwAQoECAoQAAoECFIQBAoECFUQAAoECFkQBgoFCKQBEAESJil+1qEwL3hAQDEuS6iGjUNdwDn8q8eMVXlAQEGsOXgl3kJdwFAD"
+     },
+     "phone": "(858) 565-2155",
+     "fax": "(619) 308-6009",
+     "email": "sales@ztelco.com"
+  },
+  "bottomOfFooter": {
+    "img": {
+      "src": "/images/components/Footer/BBB-logo.svg",
+      "title": "BBB-logo",
+      "alt": "BBB-logo",
+      "href": "https://www.bbb.org/us/ca/poway/profile/internet-service/ztelco-1126-172006889"
+    },
+    "list": [
+      {"id": "1",
+         "title": "Contact",
+          "link": "https://ztelco.com/contact"
+        },
+         {"id": "2",
+           "title": "Terms", 
+           "link": "https://ztelco.com/terms-of-service"
+          },
+       {"id": "3",
+         "title": "Privacy",
+         
+         "link": "https://ztelco.com/privacy"}
+      ],
+    "description": "©2022 ZTelco™ RingPlan™ All rights reserved"
+  },
+    "downloadLinks": [
+    {
+      "id": "1",
+      "img": {
+        "src": "/images/components/Footer/AppStore.svg",
+        "alt": "App Store",
+        "title": "App Store"
+      },
+      "link": "https://ztelco.com/download "
+    },
+     {
+      "id": "2",
+      "img": {
+        "src": "/images/components/Footer/GooglePlay.svg",
+        "alt": "Google Play",
+        "title": "Google Play"
+      },
+      "link": "https://ztelco.com/download "
+    }
+  ],
+  "ratingLink": "https://www.yelp.com/biz/ztelco-poway"
+}

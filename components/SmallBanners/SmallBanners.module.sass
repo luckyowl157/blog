@@ -1,0 +1,130 @@
+@import ../../styles/settings
+
+.smallBanners
+  +r(992)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 32px
+
+  .item
+    position: relative
+
+    overflow: hidden
+    +r(0, 991)
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      padding: 32px 42px
+      text-align: center
+      min-height: 360px
+      margin-bottom: 25px
+      border-radius: 12px
+    +r(992)
+      padding: 68px 8.8%
+      border-radius: 16px
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      opacity: .4
+      +r(0, 991)
+        height: 481px
+        width: 481px
+      +r(992)
+        height: 616px
+        width: 616px
+
+    &::before
+      background: radial-gradient(50% 50% at 50% 50%, #00BCEB 0%, rgba(0, 188, 235, 0) 100%)
+
+    &::after
+      background: radial-gradient(50% 50% at 50% 50%, #F37C66 0%, rgba(243, 124, 102, 0) 100%)
+
+    &:first-of-type
+      background: $grey-deep
+      color: $white
+
+      &::before
+        right: -20%
+        bottom: 50%
+
+      &::after
+        top: 50%
+        +r(0, 991)
+          left: -20%
+        +r(992)
+          right: -20%
+
+      span
+        color: $blue-light
+
+      .image
+        +r(0, 575)
+          top: -18px
+          left: 50%
+          transform: translateX(-52%)
+          width: 275px
+          height: 250px
+
+    &:last-of-type
+      background: $silver
+
+      &::before
+        left: -20%
+        bottom: 50%
+
+      &::after
+        right: -20%
+        top: 50%
+
+      .image
+        right: -35px
+        +r(0, 575)
+          top: -33px
+          left: 50%
+          transform: translateX(-50%)
+          width: 200px
+          height: 200px
+
+  .image
+    z-index: 1
+    position: absolute
+    +r(576, 991)
+      top: -30px
+      left: 50%
+      transform: translateX(-50%)
+      width: 250px
+      height: 250px
+    +r(992)
+      width: 400px
+      height: 380px
+      bottom: 0
+      right: 0
+
+  .content
+    position: relative
+    z-index: 1
+    +r(0, 575)
+      width: 196px
+      margin: 0 auto
+    +r(992)
+      max-width: 196px
+
+    h3
+      +r(0, 991)
+        margin: 0 0 16px
+      +r(992)
+        margin: 0 0 24px
+
+    a
+      width: 100%
+      +r(0, 991)
+        margin: 16px 0 0
+      +r(992)
+        margin-top: 32px
+
+    p
+      line-height: 1.2
+      +r(0, 575)
+        max-width: 170px
+        margin: 0 auto

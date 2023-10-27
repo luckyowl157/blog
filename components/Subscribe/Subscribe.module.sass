@@ -1,0 +1,145 @@
+@import ../../styles/settings
+
+.form
+  position: relative
+  overflow: hidden
+  border-radius: 16px
+  background: $silver
+  +r(0, 575)
+    margin: 0 -20px 64px
+  +r(0, 991)
+    padding: 32px 20px 40px
+    margin-bottom: 64px
+  +r(992)
+    padding: 32px 20px 40px
+
+  &:before
+    content: ''
+    width: 512px
+    height: 512px
+    position: absolute
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 188, 235, 0.3) 0%, rgba(0, 188, 235, 0) 100%)
+    top: 18%
+    right: 13.5%
+
+  &:after
+    content: ''
+    width: 609px
+    height: 609px
+    position: absolute
+    background: radial-gradient(50% 50% at 50% 50%, rgba(243, 124, 102, 0.5) 0%, rgba(243, 124, 102, 0) 100%)
+    top: 47%
+    left: 24.1%
+
+  h3
+    font-weight: 500
+    text-align: center
+    margin: 0 0 32px
+    width: 100%
+    font-size: 28px
+
+  form
+    background: $white
+    border-radius: 12px
+    border: 1px solid $grey-vanished
+    position: relative
+    z-index: 1
+    padding: 40px 20px
+
+  .input
+    display: block
+    font-size: 16px
+    position: relative
+    margin-bottom: 32px
+
+    input
+      border-radius: 6px
+      width: 100%
+      border: 1px solid $grey-light
+      padding: 12px 12px 11px
+      transition: $tr
+      outline: none
+      &:hover
+        border-color: $grey
+      &:active, &:focus
+        border-color: $grey-deep
+
+    span
+      background: $white
+      font-size: 14px
+      font-weight: 500
+      line-height: 20px
+      color: $grey
+      position: absolute
+      letter-spacing: -.6px
+      top: -15px
+      left: 8px
+      padding: 0 4px
+
+    sup
+      color: $accent-red
+      position: relative
+      left: -3px
+      top: 4px
+
+  .checkbox
+    padding-left: 34px
+    position: relative
+    display: block
+    cursor: pointer
+    margin-bottom: 32px
+
+    span
+      position: absolute
+      left: 0
+      top: 0
+
+      &:before
+        content: ''
+        width: 22px
+        height: 22px
+        border-radius: 4px
+        display: inline-block
+        border: 1px solid $grey-light
+
+      &:after
+        content: ''
+        display: inline-block
+        width: 22px
+        height: 22px
+        background-color: $grey-intense
+        background-image: url('./img/icon-checked.svg')
+        background-repeat: no-repeat
+        background-position: center
+        border-radius: 4px
+        position: absolute
+        left: 0
+        top: 0
+        transition: $tr
+        opacity: 0
+
+    input
+      display: none
+
+      &:checked
+        & + span::after
+          opacity: 1
+
+    p
+      font-size: 14px
+      font-family: $q
+      line-height: 1.5
+      color: $grey-deep
+      +r(0, 575)
+        letter-spacing: -.1px
+
+  .button
+    width: 100%
+    border: none
+
+  iframe
+    border: none
+    width: 100%
+    max-width: 100%
+    z-index: 1
+    position: relative

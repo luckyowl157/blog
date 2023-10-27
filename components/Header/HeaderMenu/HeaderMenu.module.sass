@@ -1,0 +1,210 @@
+@import ../../../styles/settings
+
+.menuList
+  margin: 0
+  padding: 0px
+  +r(992)
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+  > .about
+    
+    div
+      width: 406px
+      left: 305px
+
+      ul
+        +r(992)
+          grid-template-columns: repeat(1, 1fr)
+
+        li
+          
+          > a
+            +r(992)
+              grid-template-columns: 5px 1fr
+
+  > li
+    padding: 18px 0
+    cursor: pointer
+    outline: none
+      
+    &:hover
+
+      > a
+        color: $grey-deep
+
+    &.subMenu
+
+      &:hover
+        
+        > div
+          opacity: 1
+          visibility: visible
+          transition: $tr
+
+        > a
+
+          &::after
+            +r(992)
+              transform: rotateZ(-180deg)
+              border-color: $grey-deep transparent transparent transparent
+              margin-top: -2px
+
+      > a, > span
+
+        &::after
+          content: ''
+          border-radius: 0.5px
+          display: inline-block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 4px 4px 0 4px
+          border-color: $grey transparent transparent transparent
+          vertical-align: middle
+          margin-left: 2px
+          transition: $tr
+
+    &:not(:last-of-type)
+      margin-right: 21px
+
+    > a
+      font-family: $w
+      font-weight: 500
+      color: $grey
+      transition: $tr
+      letter-spacing: -0.6px
+      +r(992)
+        font-size: 16px
+    
+     
+.mobileMenuList
+  margin: 0
+  padding: 0px
+  position: relative
+  display: flex
+  +r(0, 767)
+    flex-direction: column
+    align-items: flex-start
+    margin-top: 0
+    border-bottom: 1px solid $grey-vanished
+  +r(768)
+    justify-content: space-between
+    align-items: center
+    padding: 0 71px
+
+  .openedSubItem
+    display: block
+    +r(0, 575)
+      padding-bottom: 16px
+
+    > a
+      color: $grey-deep
+      
+      &::after
+        +r(0, 991)
+          transform: rotateZ(-180deg)
+          border-color: $grey-deep transparent transparent transparent
+          vertical-align: middle
+          margin-left: 2px
+          transition: $tr
+          margin-top: -2px
+    
+    > div
+      display: grid
+
+  > .about
+
+    > div
+
+      ul
+        +r(992)
+          grid-template-columns: repeat(1, 1fr)
+
+        li
+          +r(0, 575)
+            padding: 12px 0px 15px
+
+          > a
+            +r(0, 575)
+              grid-template-columns: 0px 1fr
+
+  > li
+    cursor: pointer
+    outline: none
+    +r(0, 767)
+      padding: 17px 0 16px
+    +r(768, 991)
+      padding: 10px 0
+    +r(992)
+      padding: 18px 0
+
+    > a
+      color: $grey-deep
+      font-size: 16px
+        
+    &:hover
+
+      > a
+        +r(992)
+          color: $grey-deep
+
+        &::after
+          +r(992)
+            transform: rotateZ(-180deg)
+            border-color: $grey-deep transparent transparent transparent
+            margin-top: -2px
+
+    &.subMenu
+      +r(0, 575)
+        position: relative
+        width: 100%
+
+      &:hover
+        
+        ul
+          +r(576, 767)
+            display: grid
+          +r(768)
+            opacity: 1
+            visibility: visible
+            transition: $tr
+
+        > a
+
+          &::after
+            +r(992)
+              transform: rotateZ(-180deg)
+              border-color: $grey-deep transparent transparent transparent
+              margin-top: -2px
+        
+      > a, > span
+
+        &::after
+          content: ''
+          border-radius: 0.5px
+          display: inline-block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 4px 4px 0 4px
+          border-color: $grey transparent transparent transparent
+          vertical-align: middle
+          margin-left: 2px
+          transition: $tr
+        
+    &:not(:last-of-type)
+      +r(0, 767)
+        width: 100%
+      +r(768, 991)
+        margin-right: 21px
+
+    > a
+      font-family: $w
+      font-weight: 500
+      color: $grey
+      transition: $tr
+      letter-spacing: -0.6px
+      +r(992)
+        font-size: 16px

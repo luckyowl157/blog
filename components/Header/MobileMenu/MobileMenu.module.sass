@@ -1,0 +1,86 @@
+@import ../../../styles/settings
+
+.mobileMenu
+  background: $white
+  +r(0, 575)
+    padding: 0 0 0
+  +r(576, 767)
+    padding: 0 0 25px
+
+  &.opened
+    opacity: 1
+    visibility: visible
+    display: block
+    +r(0, 575)
+      margin-top: 87px
+      position: fixed
+      width: 100%
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      z-index: 9
+      height: 88%
+      overflow-y: auto
+      border-bottom-left-radius: 8px
+      border-bottom-right-radius: 8px
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)
+    +r(576, 767)
+      padding-top: 15px
+      position: fixed
+      width: 100%
+      left: 0
+      right: 0
+      top: 110px
+      bottom: 0
+      z-index: 9
+      height: 100%
+      overflow-y: auto
+      border-bottom-left-radius: 8px
+      border-bottom-right-radius: 8px
+      box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.15)
+    +r(768, 991)
+      margin-top: 0px
+      position: fixed
+      width: 100%
+      z-index: 11
+      top: 108px
+      padding-top: 5px
+
+  &.close
+    opacity: 0
+    visibility: hidden
+    display: none
+
+  .navForm
+
+    input
+      width: 100%
+      padding: 12px 12px 12px
+      border: 1px solid $grey-light
+      border-radius: 6px
+      font-family: $q
+      font-weight: 400
+      font-size: 14px
+      color: $grey
+      outline-color: $grey-dark
+      transition: all .2s ease
+
+.bottomTel
+  text-align: center
+  +r(0, 575)
+    padding: 17px 20px 65px
+  +r(992)
+    padding: 17px 20px
+
+  a
+    color: $grey-dark
+    font-size: 16px
+    font-family: $w
+    font-weight: 500
+    letter-spacing: -0.5px
+  .burger
+    +r(0,575)
+      margin: 4px 0 0 0
+    +r(576)
+      margin: 4px 2px 0 23px

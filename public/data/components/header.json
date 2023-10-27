@@ -1,0 +1,288 @@
+{
+  "tagline": "Powering the Growth of Business",
+  "logo": {
+    "src": "/images/components/Header/logo.svg",
+    "alt": "RingPlan - Innovating the Exchange of Information",
+    "title": "RingPlan - Innovating the Exchange of Information"
+  },
+  "tel": {
+    "title": "(858) 565-2155",
+    "href": "8585652155"
+  },
+  "menuList": [
+    {
+      "name": "Services",
+      "href": "#",
+      "submenuList": [
+        {
+          "title": "Business Internet",
+          "description": "Commercial Tenants Demand More Speed!",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/business-internet.svg",
+            "alt": "business-internet",
+            "title": "Business Internet"
+          },
+          "href": "https://ztelco.com/services/business-internet-service/"
+        },
+        {
+          "title": "Managed Wifi",
+          "description": "Looking to provide reliable wifi hotspot services to your customers at an unbeatable price?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/managed-wifi.svg",
+            "alt": "managed-wifi",
+            "title": "Managed Wifi"
+          },
+          "href": "https://ztelco.com/services/managed-wifi/"
+        },
+        {
+          "title": "Digital Telephone",
+          "description": "ZTelco’s RingPlan Platform is changing the way businesses communicate.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/digital-telephone.svg",
+            "alt": "digital-telephone",
+            "title": "Digital Telephone"
+          },
+          "href": "https://ztelco.com/services/voip-phone-service/"
+        },
+        {
+          "title": "Managed Infrastructure",
+          "description": "Looking for the ultimate solution to optimize your business performance?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/managed-infrastructure.svg",
+            "alt": "managed-infrastructure",
+            "title": "Managed Infrastructure"
+          },
+          "href": "https://ztelco.com/services/managed-infrastructure/"
+        },
+        {
+          "title": "Cabling Management",
+          "description": "Need Help Structuring and Arranging Your Cabling?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/cabling-management.svg",
+            "alt": "cabling-management",
+            "title": "Cabling Management"
+          },
+          "href": "https://ztelco.com/services/cabling-management/"
+        },
+        {
+          "title": "Residential Internet",
+          "description": "Get Online with ZTelco Residential Fiber, a perfect solution for residential high-rise and multi-unit complexes.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Services/residential-internet.svg",
+            "alt": "residential-internet",
+            "title": "Residential Internet"
+          },
+          "href": "https://ztelco.com/services/residential-internet/"
+        }
+      ],
+      "visitPage": {
+        "text": "See all Services",
+        "url": "https://ztelco.com/services/"
+      }
+    },
+    {
+      "name": "Solutions",
+      "href": "#",
+      "submenuList": [
+        {
+          "title": "Property Management",
+          "description": "Commercial Tenants Demand More Speed!",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/property-managment.svg",
+            "alt": "Property Management",
+            "title": "Property Management"
+          },
+          "href": "https://ztelco.com/business-solutions/property-management/"
+        },
+        {
+          "title": "Internet for Events",
+          "description": "Does your business require temporary wifi connectivity for your special events?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/internet-for-events.svg",
+            "alt": "Internet for Events",
+            "title": "Managed Wifi"
+          },
+          "href": "https://ztelco.com/business-solutions/internet-for-events/"
+        },
+        {
+          "title": "Commercial Real Estate",
+          "description": "Get your commercial real estate properties connected to the fastest and most reliable data and voice network.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/commercial-real-estate.svg",
+            "alt": "Commercial Real Estate",
+            "title": "Commercial Real Estate"
+          },
+          "href": "https://ztelco.com/business-solutions/commercial-real-estate/"
+        },
+        {
+          "title": "Internet for Remote Sites",
+          "description": "Our Wireless Internet Eliminates Installation Time and Improves Connectivity, Even in Challenging Locations",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/internet-for-remote-sites.svg",
+            "alt": "Internet for Remote Sites",
+            "title": "Internet for Remote Sites"
+          },
+          "href": "https://ztelco.com/business-solutions/internet-for-remote-sites/"
+        },
+        {
+          "title": "Network IT",
+          "description": "Are you spending too much time managing your network and not enough time making money?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/network-it.svg",
+            "alt": "Network IT",
+            "title": "Network IT"
+          },
+          "href": "https://ztelco.com/business-solutions/network-it/"
+        },
+        {
+          "title": "Internet For Gaming",
+          "description": "Faster Internet for Professionals Working from Home",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/internet-for-gaming.svg",
+            "alt": "Internet For Gaming",
+            "title": "Internet For Gaming"
+          },
+          "href": "https://ztelco.com/business-solutions/internet-for-professional-gaming/"
+        },
+        {
+          "title": "Network Integrations",
+          "description": "Connect most of your new or existing technologies into one easy to manage network.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/network-integration.svg",
+            "alt": "Network Integrations",
+            "title": "Network Integrations"
+          },
+          "href": "https://ztelco.com/business-solutions/network-integrations/"
+        },
+        {
+          "title": "Battery Backup Systems",
+          "description": "Ensure business continuity in the case of an emergency with a commercial battery backup system.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Solutions/battery-backup-system.svg",
+            "alt": "Battery Backup Systems",
+            "title": "Battery Backup Systems"
+          },
+          "href": "https://ztelco.com/business-solutions/battery-backup-systems-from-ztelco/"
+        }
+      ],
+      "visitPage": {
+        "text": "See all Solutions",
+        "url": "https://ztelco.com/business-solutions/"
+      }
+    },
+    {
+      "name": "About",
+      "href": "#",
+      "submenuList": [
+        {
+          "title": "About Us",
+          "href": "https://ztelco.com/about-us/"
+        },
+        {
+          "title": "Blog",
+          "href": "https://blog.ztelco.com/?_ga=2.197605799.907663794.1656335996-1363606991.1655114565"
+        },
+        {
+          "title": "Leadership",
+          "href": "https://ztelco.com/leadership/"
+        },
+        {
+          "title": "FAQ",
+          "href": "https://ztelco.com/faq/"
+        },
+        {
+          "title": "Careers",
+          "href": "https://pages.ztelco.com/ztelco-careers?_ga=2.92705429.907663794.1656335996-1363606991.1655114565"
+        }
+      ]
+    },
+    {
+      "name": "Industry",
+      "href": "#",
+      "submenuList": [
+        {
+          "title": "Medical Facilities",
+          "description": "Today’s medical facilities and hospitals require more performance from their data network than ever before.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/medical-facilities.svg",
+            "alt": "Medical Facilities",
+            "title": "Medical Facilities"
+          },
+          "href": "https://ztelco.com/industries/secure-internet-and-phone-solutions-for-medical-facilities/"
+        },
+        {
+          "title": "Hotels",
+          "description": "Need an internet and phone company that honors your hotel brand standards?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/hotels.svg",
+            "alt": "Hotels",
+            "title": "Hotels"
+          },
+          "href": "https://ztelco.com/industries/reliable-internet-and-phone-services-for-hotels/"
+        },
+        {
+          "title": "Auto Dealerships",
+          "description": "Integrate your communications into one easy to manage network.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/auto-dealerships.svg",
+            "alt": "Auto Dealerships",
+            "title": "Auto Dealerships"
+          },
+          "href": "https://ztelco.com/industries/data-plans-for-auto-dealerships-internet-and-phone/"
+        },
+        {
+          "title": "Construction Sites",
+          "description": "Planning a large construction project and need temporary internet connectivity?",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/construction-sites.svg",
+            "alt": "Construction Sites",
+            "title": "Construction Sites"
+          },
+          "href": "https://ztelco.com/industries/temporary-internet-and-phone-services-for-construction-sites/"
+        },
+        {
+          "title": "Law Firms",
+          "description": "Law firms and legal centers rely on robust internet and phone services for their day-to-day operations.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/law-firms.svg",
+            "alt": "Law Firms",
+            "title": "Law Firms"
+          },
+          "href": "https://ztelco.com/industries/trusted-internet-and-phone-services-for-law-firms/"
+        },
+        {
+          "title": "Gyms and Rec Centers",
+          "description": "Upgrade your facility and get on a winning network.",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/gyms-and-rec-centers.svg",
+            "alt": "Gyms and Rec Centers",
+            "title": "Gyms and Rec Centers"
+          },
+          "href": "https://ztelco.com/industries/internet-and-phone-provider-for-gyms-and-recreation-centers/"
+        },
+        {
+          "title": "Schools and Educators",
+          "description": "Education today relies heavily on technology and online tools being made accessible in the classroom",
+          "icon": {
+            "src": "/images/components/Header/subMenu/Industry/schools-and-decucators.svg",
+            "alt": "Schools and Educators",
+            "title": "Schools and Educators"
+          },
+          "href": "https://ztelco.com/industries/optimizing-school-communications-with-better-internet-and-phone-services/"
+        }
+      ],
+      "visitPage": {
+        "text": "See all Solutions",
+        "url": "https://ztelco.com/industries/"
+      }
+    },
+    {
+      "name": "Support",
+      "href": "https://ztelco.com/support/"
+    },
+    {
+      "name": "Contact Us",
+      "href": "https://ztelco.com/contact/"
+    }
+  ]
+}

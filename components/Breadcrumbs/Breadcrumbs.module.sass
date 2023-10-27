@@ -1,0 +1,30 @@
+@import ../../styles/settings
+
+.breadcrumbs
+  +r(0, 575)
+    padding-top: 90px
+  +r(0, 991)
+    margin: 6px 0 13px
+  +r(576, 991)
+    padding-top: 110px
+  +r(992)
+    margin: 28px 0 5px
+    padding-top: 84px
+
+  a, span
+    padding-right: 12px
+    margin-right: 8px
+    display: inline-block
+    font-size: 14px
+    font-family: $q
+    font-weight: 400
+    color: $grey
+
+  a
+    background: url(./img/breadcrumbs-arrow.svg) no-repeat right 38%
+
+    &:hover
+      text-decoration: underline
+
+  span
+    text-transform: capitalize

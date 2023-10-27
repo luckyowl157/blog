@@ -1,0 +1,57 @@
+@import settings
+
+.button
+  font-family: $m
+  text-transform: uppercase
+  border-radius: 2px
+  font-weight: 700
+  border: none
+  transition: all .3s ease
+
+  &:hover
+    text-decoration: none
+
+  &.full
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: 100%
+    font-size: 16px
+    +r(0, 991)
+      height: 40px
+    +r(992)
+      height: 60px
+
+  &.large
+    display: inline-block
+    text-align: center
+    +r(0, 991)
+      justify-self: 40px
+      font-size: 14px
+      padding: 10px 5px
+      width: 200px
+    +r(992)
+      height: 60px
+      font-size: 16px
+      padding: 19px 5px
+      width: 270px
+
+  &.blue
+    border: 1px solid $blue
+    background-color: $blue
+    color: $white !important
+    cursor: pointer
+
+    &:hover
+      background-color: $white
+      color: $blue
+
+  &.primary
+    border: 1px solid $orange-btn
+    background-color: $orange-btn
+    color: $white
+
+    &:hover
+      background-color: $white
+      color: $orange-btn

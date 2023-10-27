@@ -1,0 +1,34 @@
+@import ../../styles/settings
+
+.search
+  +r(992)
+    margin-top: 15px
+
+  form
+    position: relative
+    +r(0, 991)
+      margin: 0 auto 25px
+    +r(992)
+      margin: 0 auto 30px
+
+  input
+    padding: 13px 15px 12px 35px
+    width: 100%
+    border-radius: 2px
+    color: $grey
+    font-weight: 400
+    font-family: $q
+    border: 1px solid #CBD6E2
+    border-radius: 6px
+    outline: none
+    transition: $tr
+    &:hover
+      border-color: $grey
+    &:active, &:focus
+      border-color: $grey-deep
+
+  svg
+    left: 13px
+    top: 12px
+    cursor: pointer
+    position: absolute

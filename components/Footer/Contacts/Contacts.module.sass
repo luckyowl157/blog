@@ -1,0 +1,36 @@
+@import ../../../styles/settings
+
+.address
+  font-style: normal
+  +r(0, 575)
+    margin-bottom: 32px
+  +r(576)
+    text-align: right
+  +r(576, 991)
+    margin-left: 20px
+
+  ul
+    padding: 0
+    +r(576, 991)
+      margin-top: 24px
+    +r(992)
+      margin-top: 22px
+
+  li
+    max-width: 210px
+    &:not(:last-child)
+      margin-bottom: 14px
+
+  a
+    color: $grey-light
+    font-family: $q
+    font-size: 16px
+    line-height: 1.5
+    letter-spacing: 0.05px
+    transition: color linear $tr
+    &:hover
+      color: $white
+  p
+    color: $white
+    font-size: 18px
+    letter-spacing: 0.05em

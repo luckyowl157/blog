@@ -1,0 +1,52 @@
+@import ../../styles/settings
+
+.pagination
+  display: flex
+  align-items: center
+  +r(0, 575)
+    justify-content: center
+  +r(992)
+    margin-top: 46px
+
+  .prev, .next
+    display: flex
+    align-items: center
+    justify-content: center
+
+    span
+      margin: 0
+
+    &[disabled]
+      pointer-events: none
+
+  .prev
+    +r(0, 575)
+      margin-right: 10px
+
+  .next
+    +r(0, 575)
+      margin-right: 0
+
+  a:not(.prev, .next), span
+    display: inline-block
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 18px
+    font-weight: 500
+    line-height: 22px
+    font-family: $w
+    color: $grey
+    +r(0, 575)
+      margin-right: 10px
+    +r(576)
+      margin-right: 16px
+
+  a:not(.prev, .next)
+    &:hover
+      color: $grey-deep
+
+  .current
+    color: $grey-deep

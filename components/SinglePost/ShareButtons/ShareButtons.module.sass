@@ -1,0 +1,74 @@
+@import ../../../styles/settings
+
+.share
+  display: flex
+  align-items: center
+  +r(576)
+    margin-bottom: 32px
+
+  &.text
+    +r(0, 575)
+      flex-wrap: wrap
+      justify-content: center
+
+  p
+    font-weight: 600
+    line-height: 1.4
+    color: $grey
+    +r(0, 575)
+      text-align: center
+      font-size: 14px
+      letter-spacing: -.5px
+      width: 100%
+      margin-bottom: 17px
+    +r(576)
+      font-size: 16px
+      margin-right: auto
+
+  .button
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 6px
+    background: rgba(72, 162, 245, 0.08)
+    border: 2px solid $accent-blue
+    border-radius: 54px
+    +r(0, 575)
+      padding: 6px 10px
+    +r(576)
+      padding: 6px 13px
+
+    &:not(:last-of-type)
+      +r(0, 575)
+        margin-right: 12px
+      +r(576)
+        margin-right: 13px
+
+    &:hover
+      background: $accent-blue
+
+      span
+        color: $white
+
+      svg
+        path
+          fill: $white
+
+    svg
+      +r(0, 575)
+        width: 18px
+        height: 18px
+      +r(576)
+        min-width: 24px
+
+      path
+        transition: $tr
+
+    span
+      font-size: 16px
+      font-weight: 500
+      font-family: $w
+      color: $accent-blue
+      line-height: 22px
+      transition: $tr
+      letter-spacing: -.7px

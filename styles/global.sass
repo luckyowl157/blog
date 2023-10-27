@@ -1,0 +1,169 @@
+@import settings
+@import fonts
+@import btn
+@import blogBtn
+@import container
+
+html
+  scroll-behavior: smooth
+
+*, ::before, ::after
+  box-sizing: border-box
+
+body
+  margin: 0
+  background-color: $white
+  font-family: $w
+  font-weight: 400
+  font-size: 18px
+  max-width: 100vw
+  overflow-x: hidden
+
+  h1
+    line-height: 1.2
+    font-weight: 400
+    letter-spacing: -0.05em
+    +r(0, 575)
+      font-size: 42px
+    +r(576, 991)
+      font-size: 56px
+    +r(992)
+      font-size: 64px
+
+  h2
+    line-height: 1.2
+    font-weight: 400
+    letter-spacing: -0.05em
+    +r(0, 575)
+      font-size: 32px
+    +r(576, 991)
+      font-size: 38px
+    +r(992)
+      font-size: 42px
+
+  h3
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: -0.05em
+    +r(0, 991)
+      font-size: 24px
+    +r(992)
+      font-size: 28px
+
+  h4
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: -0.05em
+    margin: 0 0 15px
+    +r(0, 991)
+      font-size: 20px
+    +r(992)
+      font-size: 22px
+
+  p
+    font-family: $q
+    font-weight: 400
+    line-height: 1.5
+    margin: 0
+    +r(0, 991)
+      font-size: 16px
+    +r(992)
+      font-size: 18px
+
+  li
+    list-style-type: none
+
+  a
+    text-decoration: none
+    font-family: $q
+    transition: all .3s ease
+
+  section:not(.nomargin)
+    +r(0, 575)
+      margin: 0 0 64px
+    +r(576, 991)
+      margin: 0 0 96px
+    +r(992)
+      margin: 0 0 144px
+
+  .additional
+    line-height: 1.2
+    font-weight: 500
+    +r(0, 991)
+      font-size: 14px
+    +r(992)
+      font-size: 16px
+
+  .gradient
+    background: $gr-maim
+    display: inline-block
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  .bg-dark
+    background: $grey-deep
+
+  pre
+    display: block
+    font-size: 16px
+    border-radius: 3px
+    padding: 10px
+    background: $grey-vanished
+    border: 1px solid $grey-light
+    opacity: .7
+
+  .flex
+    display: flex
+    flex-wrap: wrap
+
+  .half
+    width: 50%
+    padding: 0 15px
+    +r(0, 991)
+      width: 100%
+
+  .one-third
+    width: 33.33%
+    padding: 0 15px
+    +r(0, 991)
+      width: 100%
+
+  .text-center
+    text-align: center
+
+  .text-white
+    color: $white
+
+main
+  +r(992)
+    display: flex
+    flex-wrap: wrap
+
+  article
+    +r(0, 991)
+      margin-bottom: 64px
+    +r(992)
+      width: 65.9%
+      margin-bottom: 96px
+
+    h1
+      letter-spacing: -0.05em
+      +r(0, 575)
+        font-size: 32px
+      +r(576, 991)
+        font-size: 38px
+      +r(992)
+        font-size: 42px
+        margin-top: 7px
+
+  aside
+    +r(992)
+      margin-left: auto
+      padding-left: 5.13%
+      width: 34.1%
+
+    h1
+      +r(0, 991)
+        margin: 8px 0 0
+        letter-spacing: -0.05em
+        font-size: 32px

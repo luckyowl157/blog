@@ -1,0 +1,56 @@
+//fonts
+$w: 'Work Sans', sans-serif
+$q: 'Questrial', sans-serif
+$m: 'Montserrat', sans-serif
+$l: 'Lato', sans-serif
+
+//colors
+$black: #0E121B
+$white: #FFFFFF
+$grey-intense: #0B213E
+$grey-deep: #233751
+$grey-dark: #48596E
+$grey: #85909F
+$grey-light: #C2C7CF
+$grey-vanished: #E7E9EC
+$grey-bread: #AEBED0
+$cool-grey: #E6E7E8
+$silver: #F3F3F4
+$blue-dark: #1C6091
+$blue: #00ACD8
+$blue-light: #81D5EB
+$blue-vanished: #E6F7FB
+$orange-btn: #F47C66
+$orange-dark: #F37C66
+$orange: #F69D8C
+$orange-light: #F9BEB3
+$orange-vanished: #FEF2F0
+
+//gradient
+$gr-maim: linear-gradient(to right, #00ACD8, #F37C66)
+
+//transition
+$tr: 0.2s
+
+//accents
+$accent-green: #32CD9F
+$accent-green-light: #D6F5EC
+$accent-blue: #48A2F5
+$accent-blue-light: #CFE6FC
+$accent-purple: #846CFE
+$accent-purple-light: #D5CCFF
+$accent-yellow: #FBCD57
+$accent-eellow-light: #FEF0CD
+$accent-red: #F65E5E
+$accent-red-light: #FCCFCF
+
+//mixin
+@mixin r($minSize, $maxSize: false)
+
+  @if $minSize and $maxSize
+    @media only screen and (min-width: $minSize + 'px') and (max-width: $maxSize + 'px')
+      @content
+
+  @else
+    @media only screen and (min-width: $minSize + 'px')
+      @content

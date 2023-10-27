@@ -1,0 +1,33 @@
+@import ../../../styles/settings
+
+.post
+  position: relative
+  display: block
+  color: $grey-intense
+
+  &:hover
+    color: $blue
+
+  .img
+    width: 100%
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    +r(0, 767)
+      height: auto
+    +r(768, 991)
+      height: 351px
+    +r(992, 1199)
+      height: 160px
+    +r(1200)
+      height: 180px
+
+  p
+    margin: 18px 0 32px
+    line-height: 1.2
+    font-family: $w
+    font-weight: 500
+    +r(0, 991)
+      font-size: 16px
+    +r(992)
+      font-size: 18px

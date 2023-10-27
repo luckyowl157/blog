@@ -1,0 +1,46 @@
+@import ../../../styles/settings
+
+.listFoter
+  padding: 0
+  display: flex
+  +r(576, 991)
+    display: flex
+    flex-direction: column
+    margin-bottom: 19px
+  +r(992)
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    column-gap: 38px
+
+  .listWrapper
+    &:not(:last-child)
+      +r(576, 991)
+        margin-bottom: 20px
+
+  ul
+    padding: 0
+    +r(576, 991)
+      column-count: 2
+      column-gap: 30px
+    +r(576, 991)
+      margin-top: 24px
+    +r(992)
+      margin-top: 22px
+
+  li
+    &:not(:last-child)
+      +r(576)
+        margin-bottom: 15px
+
+    a
+      color: $grey-light
+      font-size: 16px
+      letter-spacing: 0.05px
+      transition: color linear $tr
+      &:hover
+        color: $white
+
+  .title
+    color: $white
+    font-size: 18px
+    letter-spacing: 0.05em

@@ -1,0 +1,377 @@
+@import settings
+
+.btn 
+  position: relative 
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  border-radius: 8px 
+  font-family: $w
+  font-weight: 500
+  letter-spacing: -1px 
+  line-height: 1
+  transition: $tr
+  z-index: 1
+  cursor: pointer 
+
+  &:not(.small)
+    +r(0, 991)
+      font-size: 16px
+    +r(992)
+      font-size: 18px
+
+  &.small 
+    font-size: 16px
+    min-height: 40px
+    padding: 8px 20px
+
+  &:focus,
+    &:focus-visible
+      outline: none
+
+  .spanImg
+    display: inline-flex
+    align-items: center
+    justify-content: center
+
+    svg 
+      path 
+        transition: $tr
+
+  &:disabled,
+  &.disabled
+    pointer-events: none
+
+  &:not(.nav)
+    .spanImg
+      width: 16px
+      height: 16px
+
+      &.icon-before 
+        margin-right: 10px
+
+      &.icon-after
+        margin-left: 10px
+
+  &:not(.nav)
+    &:not(.link)
+      &:not(.small)
+        +r(0, 991)
+          min-height: 40px
+          padding: 8px 20px
+        +r(992)
+          min-height: 54px
+          padding: 10px 25px
+
+  &.primary-fill,
+  &.secondary-fill 
+    &:before 
+      content: ''
+      position: absolute
+      width: calc(100% + 6px)
+      height: calc(100% + 6px)
+      background: transparent
+      border: 4px solid
+      border-radius: 11px
+      top: -3px
+      left: -3px
+      opacity: 0
+      z-index: -1
+      transition: $tr
+
+    &:focus,
+    &:focus-visible
+
+      &:before
+        opacity: 1
+
+  // Primary Filled Button
+  &.primary-fill 
+    background: $grey-intense
+    color: $white 
+
+    &:before 
+      border-color: $grey-vanished
+
+    svg 
+      path 
+        stroke: $white
+
+    &:hover 
+      background: $grey-dark
+
+    &:focus,
+    &:focus-visible 
+      background: $grey-intense
+
+    &:disabled,
+    &.disabled
+      background: $grey-light
+
+  // Primary Outlined Button
+  &.primary-outline 
+    background: $white
+    border: 2px solid $grey
+    color: $grey-deep
+
+    svg 
+      path 
+        stroke: $grey-deep
+
+    &:hover 
+      border-color: $grey-deep
+
+    &:focus,
+    &:focus-visible 
+      color: $grey
+      border-color: $grey-light
+
+      svg 
+        path 
+          stroke: $grey
+
+    &:disabled,
+    &.disabled 
+      color: $grey-light
+      border-color: $grey-vanished
+
+      svg 
+        path 
+          stroke: $grey-light
+
+  // Secondary Filled Button
+  &.secondary-fill 
+    background: $white
+    color: $grey-deep
+
+    &:before 
+      border-color: $grey
+
+    svg 
+      path 
+        stroke: $grey-intense
+
+    &:hover 
+      background: $grey-vanished
+
+    &:disabled,
+    &.disabled 
+      background: $grey
+
+  // Secondary Outlined Button
+  &.secondary-outline 
+    background: transparent 
+    border: 2px solid $grey-light
+    color: $white
+
+    svg 
+      path 
+        stroke: $white
+
+    &:hover 
+      border-color: $white
+
+    &:focus,
+    &:focus-visible
+      border-color: $grey
+      color: $grey-vanished
+
+      svg 
+        path 
+          stroke: $grey-vanished
+
+    &:disabled,
+    &.disabled 
+      color: $grey
+      border-color: $grey-dark
+
+      svg 
+        path 
+          stroke: $grey
+
+  // Additional Button
+  &.additional 
+    background: $grey-dark
+    border: 2px solid $grey-dark
+    color: $white
+
+    svg 
+      path 
+        stroke: $grey-light
+
+    &:hover 
+      background: $grey
+      border-color: $grey
+
+      svg 
+        path 
+          stroke: $white
+
+    &:focus,
+    &:focus-visible
+      background: $grey-dark
+      border-color: $white 
+
+      svg 
+        path 
+          stroke: $grey-light
+
+    &:disabled,
+    &.disabled 
+      color: $grey-deep
+
+      svg 
+        path 
+          stroke: $grey-deep
+
+  // Link Button
+  &.link 
+    &-white 
+      color: $white
+
+      svg 
+        path 
+          stroke: $white
+
+      &:hover 
+        color: $blue 
+
+        svg 
+          path 
+            stroke: $blue
+
+      &:focus,
+      &:focus-visible
+        color: $grey-deep
+
+        svg 
+          path 
+            stroke: $grey-deep
+
+      &:disabled,
+      &.disabled 
+        opacity: .5
+
+    &-blue 
+      color: $blue-dark
+
+      svg 
+        path 
+          stroke: $blue-dark
+
+      &:hover 
+        color: $blue 
+
+        svg 
+          path 
+            stroke: $blue
+
+      &:focus,
+      &:focus-visible
+        color: $grey-deep
+
+        svg 
+          path 
+            stroke: $grey-deep
+
+      &:disabled,
+      &.disabled 
+        color: $grey-light
+
+        svg 
+          path 
+            stroke: $grey-light
+
+    &-grey 
+      color: $grey-dark
+
+      svg 
+        path 
+          stroke: $grey-dark
+
+      &:hover 
+        color: $orange-dark 
+
+        svg 
+          path 
+            stroke: $orange-dark
+
+      &:focus,
+      &:focus-visible
+        color: $orange
+
+        svg 
+          path 
+            stroke: $orange
+
+      &:disabled,
+      &.disabled 
+        color: $grey-light
+
+        svg 
+          path 
+            stroke: $grey-light
+
+  // Navigation
+  &.nav 
+    justify-content: center
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    padding: 5px
+    margin-right: 14px
+    font-size: 0
+    
+    .spanImg 
+      width: 18px
+      height: 18px
+
+    &-next 
+      transform: scale(-1, 1)
+
+    &-light 
+      background: $grey-dark
+      border: 1px solid $grey-dark
+
+      svg 
+        path 
+          stroke: $white
+
+      &:hover
+        background: $grey
+        border-color: $grey
+
+      &:focus,
+      &:focus-visible
+        background: $grey-dark
+        border-color: $white
+
+      &:disabled,
+      &.disabled 
+        svg 
+          path 
+            stroke: $grey-deep
+
+    &-dark 
+      background: $grey-vanished
+      border: 1px solid $grey-vanished
+
+      svg 
+        path 
+          stroke: $grey-deep
+
+      &:hover
+        background: $grey-vanished
+        border-color: $grey-light
+
+      &:focus,
+      &:focus-visible
+        background: $silver
+        border-color: $grey-deep
+
+      &:disabled,
+      &.disabled 
+        svg 
+          path 
+            stroke: $grey-light

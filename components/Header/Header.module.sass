@@ -1,0 +1,191 @@
+@import ../../styles/settings
+
+.header
+  top: 0
+  right: 0
+  left: 0
+  z-index: 10
+  box-shadow: none
+  font-size: initial
+  line-height: initial
+  transition: $tr
+  +r(0, 575)
+    position: fixed
+    padding: 0 0 11px
+  +r(576)
+    position: fixed
+    background: transparent
+  +r(576, 991)
+    padding: 0px 0 16px
+  +r(992)
+    padding: 0 0 8px
+
+  &.is_scrolled
+    background: $white
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12)
+
+  &.openedMenu
+    background: $white
+    +r(0, 575)
+      padding: 0 0 11px
+    +r(992)
+      padding: 9px 0
+
+  .tagWrapper
+    background: $white
+
+  .tagline
+    position: relative
+    padding-top: 10px
+    text-align: center
+    font-size: 14px
+    color: $grey
+
+    &::after
+      content: ''
+      display: block
+      height: 1px
+      background: $grey-vanished
+      +r(0,575)
+        margin: 8px 0 14px
+      +r(576,991)
+        margin: 8px 0 17px
+      +r(992)
+        margin: 8px 0 9px
+
+  .wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +r(0, 575)
+      margin-top: -2px
+
+    .burgerMenu
+      width: 24px
+      height: 24px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-end
+      position: relative
+      cursor: pointer
+      +r(0, 575)
+        margin-right: 2px
+      +r(576, 991)
+        margin-right: 0px
+        margin-left: 19px
+
+      span
+        background: $grey-dark
+        display: block
+        margin-bottom: 2px
+        height: 3px
+        transition: all .2s ease
+
+        &.top
+          +r(0, 991)
+            width: 15px
+
+        &.middle
+          transition: all $tr ease
+          transition-delay: 0.2s
+          +r(0, 991)
+            width: 12px
+
+        &.bottom
+          margin-bottom: 0
+          transition: all $tr ease
+          transition-delay: 0.1s
+          +r(0, 991)
+            width: 9px
+
+    .active
+
+      span
+
+        &.top
+          transform: rotate(45deg)
+          top: 10px
+          left: 5px
+          position: absolute
+
+        &.middle
+          transform: rotate(-45deg)
+          width: 15px
+          top: 10px
+          left: 5px
+          position: absolute
+
+        &.bottom
+          transform: rotate(180deg)
+          opacity: 0
+          margin-bottom: 0
+          display: none
+
+  .nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +r(0, 575)
+      width: auto
+    +r(576, 991)
+      width: auto
+      justify-content: left
+    +r(992, 1200)
+      width: 672px
+    +r(1201)
+      width: 692px
+      margin-right: 21px
+
+    .mobPhone
+      font-family: $w
+      font-weight: 500
+      font-size: 16px
+      letter-spacing: -0.8px
+      color: $grey-dark
+      margin-left: 1px
+      +r(0, 767)
+        display: none
+
+  .logo
+    display: inline-flex
+    margin-right: 26px
+
+  .navMenu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 561px
+
+  .dashboard
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +r(767, 991)
+      margin-left: 0
+    +r(992)
+      margin-left: 27px
+
+    > a
+      font-family: $w
+      color: $grey-dark
+      font-weight: 500
+      font-size: 16px
+      letter-spacing: -0.9px
+      line-height: 20px
+      display: inline-flex
+
+  .navForm
+    margin-left: 0px
+    margin-top: 4px
+    +r(992)
+      margin-left: 19px
+
+  .loginBtns
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 2px 0 20px
+    width: 215px
+    +r(992,1200)
+      margin: 0 2px 0 23px
